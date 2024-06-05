@@ -1,0 +1,23 @@
+{% extends 'dummy.html' %}
+
+{% block title %}
+<title>Profile Page</title>
+
+{% endblock %}
+
+{% block body_block  %}
+{% if username %}
+<h1>
+    
+</h1>
+{% else %}
+<h1>
+    Details of user
+</h1>
+<h2>username is {{UO.username}}</h2>
+<h2>username is {{UO.email}}</h2>
+<h2>username is {{PO.address}}</h2>
+<h2>Image is {{PO.profile_pic}}</h2>
+<img src="{{PO.profile_pic.url}}" alt="no img" srcset="">
+{% endif %}
+{% endblock %}
